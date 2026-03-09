@@ -170,3 +170,19 @@ This project demonstrates practical skills in:
 - Confusion matrix evaluation
 - Data visualisation using ggplot2
 - Reproducible statistical analysis in R
+
+---
+# References
+
+Chandrasekaran, P., & Weiskirchen, R. (2024).
+The Role of Obesity in Type 2 Diabetes Mellitus—An Overview.
+International Journal of Molecular Sciences, 25(3), 1882.
+https://doi.org/10.3390/ijms25031882
+
+Knowler, W. C., Bennett, P. H., Hamman, R. F., & Miller, M. (1978).
+Diabetes Mellitus in the Pima Indians: Genetic and Evolutionary Considerations.
+American Journal of Physical Anthropology.
+
+---
+Pima Indians Diabetes Dataset – National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK).
+Available via the mlbench package in R.
