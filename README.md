@@ -28,15 +28,17 @@ Which clinical factors are associated with diabetes in the Pima Indian populatio
 
 The dataset contains 768 observations with 8 predictor variables and a binary outcome variable.
 
-- pregnant:	Number of pregnancies
-- glucose:	Plasma glucose concentration
-- pressure:	Diastolic blood pressure
-- triceps:	Triceps skinfold thickness
-- insulin:	Serum insulin
-- mass:	Body mass index (BMI)
-- pedigree:	Diabetes pedigree function
-- age:	Age of individual
-- diabetes:	Diabetes status (pos/neg)
+| Variable | Description |
+|---------|-------------|
+| pregnant | Number of pregnancies |
+| glucose | Plasma glucose concentration |
+| pressure | Diastolic blood pressure |
+| triceps | Triceps skinfold thickness |
+| insulin | Serum insulin |
+| mass | Body mass index (BMI) |
+| pedigree | Diabetes pedigree function |
+| age | Age of individual |
+| diabetes | Diabetes status (pos/neg) |
 
 Key characteristics:
 
@@ -95,14 +97,13 @@ Models were compared using:
 
 The full model provided better overall model fit and was therefore selected as the final model. 
 
-Odds Ratio Interpretation
+Odds Ratio Interpretation of Key Predictors Identified:
 
-Key predictors identified:
-
-- Predictor	Interpretation
-- Glucose	Each unit increase increases diabetes odds by ~4%
-- BMI (mass)	Each unit increase increases diabetes odds by ~7%
-- Pedigree	Strong association with diabetes risk
+| Predictor | Interpretation |
+|-----------|---------------|
+| Glucose | Each unit increase increases diabetes odds by ~4% |
+| BMI (mass) | Each unit increase increases diabetes odds by ~7% |
+| Pedigree | Strong association with diabetes risk |
 
 The diabetes pedigree function showed the largest effect, reflecting genetic predisposition.
 
@@ -112,11 +113,13 @@ Predicted probabilities from the final model were converted into binary predicti
 
 A confusion matrix was generated to evaluate model performance.
 
-- Sensitivity:	56.9%
-- Specificity:	88.9%
-- Accuracy: 78.3%
-- Positive Predictive Value:	71.8%
-- Negative Predictive Value:	80.6%
+| Metric | Value |
+|------|------:|
+| Sensitivity | 56.9% |
+| Specificity | 88.9% |
+| Accuracy | 78.3% |
+| Positive Predictive Value (PPV) | 71.8% |
+| Negative Predictive Value (NPV) | 80.6% |
 
 The model demonstrates higher specificity than sensitivity, meaning it performs better at identifying non-diabetic individuals. 
 
@@ -126,11 +129,12 @@ Receiver Operating Characteristic (ROC) curves were used to evaluate model discr
 
 Two models were compared:
 
-- Full Model:	0.86
-- Reduced Model:	0.84
+| Model | AUC |
+|------|----:|
+| Full Model | 0.86 |
+| Reduced Model | 0.84 |
 
 An AUC of ~0.86 indicates good discrimination, meaning the model can distinguish between diabetes-positive and diabetes-negative individuals with high probability. 
-
 
 Youden’s J statistic was used to identify optimal classification thresholds balancing sensitivity and specificity.
 
